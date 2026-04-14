@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <header>
     <nav>
-       <a href="index.html">Home</a>
+    <div class="menu">
+       <a href="index.html">Movie Research</a>
        <a href="filter.html">Filter</a>
        <a href="advanced-filter.html">Advanced Filter</a>
        <a href="feedback.html">Feedback</a>
        <a href="favourite.html">Favourite</a>  
-       
+    </div> 
 </nav>
+<div class="Search">
 <input type="text" placeholder="Search for movies..." id="movieInput">
 <button onclick="getMovie()">Search</button>
+</div>
 </header>
 <main>
 <body>
