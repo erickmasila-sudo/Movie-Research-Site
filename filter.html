@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filter</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="filter.css">
 </head>
+
+<body>
 <header>
     <nav>
     <div class="menu">
@@ -16,20 +19,43 @@
          <a href="favorites.html">Favourite</a>  
      </div>
 </nav>
-<div class="Search">
-<input type="text" placeholder="Search for movies..." id="movieInput">
-<button onclick="getMovie()">Search</button>
-</div>
-</header>
 
-<body>
-    <h1>Filter Movies</h1>
-    <p>Use the filters below to narrow down your movie search by Genre:</p>
+</header>
+<div class="search-wrapper">
+        <input type="text" id="search" placeholder="Search movies..." />
+        <div id="results"></div>
+    </div>
+    
     <div class="filter-section">
-        <label for="genre">Genre:</label>
+        <label for="Genre ">Genre </label>
         <select id="genre" name="genre">
+            <option>Action</option>
+            <option>Adventure</option>
+            <option>Animation</option>
+            <option>Biography</option>
+            <option>Comedy</option>
+            <option>Crime</option>
+            <option>Documentary</option>
+            <option>Drama</option>
+            <option>Family</option>
+            <option>Fantasy</option>
+            <option>History</option>
+            <option>Horror</option>
+            <option>Music</option>
+            <option>Musical</option>
+            <option>Mystery</option>
+            <option>Romance</option>
+            <option>Sci-Fi</option>
+            <option>Sport</option>
+            <option>Thriller</option>
+            <option>War</option>
+            <option>Western</option>
         </select>
     </div>
+    <button onclick="loadMoviesByGenre()">Load Movies</button>
+<h1>Filter Movies</h1>
+    <p>Use the filters below to narrow down your movie search by Genre:</p>
+<div id="out"></div>
     <div id="Movie-holder">
         <!-- Filtered movies will be displayed here -->
     </div>

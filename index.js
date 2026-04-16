@@ -1,15 +1,13 @@
-const API_KEY = "5cf2d014";
 
-// Containers
+const API_KEY =  "412b216f";
+
 const topMoviesContainer = document.getElementById("top-movies");
 const searchInput = document.getElementById("search");
 const resultsDiv = document.getElementById("results");
 
-// ---------- Featured / Top Movies ----------
 async function loadTopMovies() {
   try {
-    // OMDb does not have a real "top movies" endpoint,
-    // so this is just a sample search.
+    
    const response = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=movie&y=2026&type=movie`);
     const data = await response.json();
 
@@ -41,7 +39,6 @@ function displayTopMovies(movies) {
   });
 }
 
-// ---------- Search Movies ----------
 function debounce(func, delay) {
   let timeout;
   return (...args) => {
@@ -94,7 +91,6 @@ function displaySearchResults(movies) {
   });
 }
 
-// ---------- Init ----------
 loadTopMovies();
 
 searchInput.addEventListener(
