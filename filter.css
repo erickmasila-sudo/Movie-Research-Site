@@ -1,0 +1,66 @@
+.filter-section {
+    text-align: center;
+    margin: 20px;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #303841;
+    color: #EEEEEE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #222831;
+}
+
+
+#Movie-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.movie-card {
+    background-color: #303841;
+    color: #EEEEEE;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.movie-card h3 {
+    font-size: 16px;
+    margin: 10px 0 5px 0;
+}
+
+.movie-card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
