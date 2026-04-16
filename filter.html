@@ -21,14 +21,16 @@
 </nav>
 
 </header>
+<h1>Filter Movies</h1>
+    <p>Use the filters below to narrow down your movie search by Genre:</p>
 <div class="search-wrapper">
         <input type="text" id="search" placeholder="Search movies..." />
-        <div id="results"></div>
     </div>
     
     <div class="filter-section">
         <label for="Genre ">Genre </label>
         <select id="genre" name="genre">
+            <option value="">All</option>
             <option>Action</option>
             <option>Adventure</option>
             <option>Animation</option>
@@ -53,9 +55,7 @@
         </select>
     </div>
     <button onclick="loadMoviesByGenre()">Load Movies</button>
-<h1>Filter Movies</h1>
-    <p>Use the filters below to narrow down your movie search by Genre:</p>
-    <div id="out"></div>
+
     <div id="Movie-holder">
         <!-- Filtered movies will be displayed here -->
     </div>

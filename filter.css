@@ -1,6 +1,8 @@
 .filter-section {
     text-align: center;
     margin: 20px;
+    display: inline-block;
+    justify-content: center;
 }
 
 label {
