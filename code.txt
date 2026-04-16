@@ -90,3 +90,12 @@ footer{
 .item:hover {
     background: #f0f0f0;
 }
+item {
+    padding: 10px;
+    cursor: pointer;
+    background: #ffffff;
+}
+
+.item:hover {
+    background: #f0f0f0;
+}

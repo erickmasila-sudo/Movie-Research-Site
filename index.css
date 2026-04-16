@@ -86,14 +86,7 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.item {
-    padding: 10px;
-    cursor: pointer;
-    background: #ffffff;
-}
 
-.item:hover {
-    background: #f0f0f0;
-}
+
 
 
