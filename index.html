@@ -6,39 +6,43 @@
     <title>HomePage</title>
     <link rel="stylesheet" href="index.css">
 </head>
-
-<header>
-    <nav>
-    <div class="menu">
-       <a href="index.html">Movie Research</a>
-       <a href="filter.html">Filter</a>
-       <a href="advanced-filter.html">Advanced Filter</a>
-       <a href="feedback.html">Feedback</a>
-       <a href="favorites.html">Favourite</a>  
-   
-    </div> 
-</nav>
-<div class="Search">
-<input type="text" placeholder="Search for movies..." id="movieInput">
-<button onclick="getMovie()">Search</button>
-</div>
-</header>
-
-
 <body>
+
+    <!-- CHANGED: header moved inside body for valid HTML structure -->
+    <header>
+        <nav>
+            <div class="menu">
+                <a href="index.html">Movie Research</a>
+                <a href="filter.html">Filter</a>
+                <a href="advanced-filter.html">Advanced Filter</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="favorites.html">Favourite</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CHANGED: wrapper added so results can hover above content -->
+    <div class="search-wrapper">
+        <input type="text" id="search" placeholder="Search movies..." />
+        <div id="results"></div>
+    </div>
+
     <h1>Welcome to the Movie Research Website</h1>
     <p>Discover a world of movies at your fingertips! Start your cinematic journey today and dive into the exciting world of movies!</p>
-    <div class="Top-movies">
-        <h2>Top Movies</h2>
-        // Add your top movies here, atleast 10 movies with their posters, names, and ratings. Also, be able to scroll sideways
-        
+
+    <div class="movie-grid">
+        <h1>Top Movies</h1>
+        <div id="top-movies">
+            <!-- Top movies will be displayed here -->
+        </div>
     </div>
+
+    <script src="index.js"></script>
+
+    <!-- CHANGED: footer moved inside body for valid HTML structure -->
+    <footer>
+        <p>&copy; 2026 Movie Research Website. All rights reserved.</p>
+    </footer>
+
 </body>
-
- <script src="index.js"></script>
-
-<footer>
-    <p>&copy; 2026 Movie Research Website. All rights reserved.</p>
- </footer>
-
 </html>

@@ -1,5 +1,5 @@
-/* CHANGED: fixed header block so nested rules are valid plain CSS */
-header {
+/*Stylesheet for Movie Research Website*/
+header{
     background-color: #303841;
     color: #EEEEEE;
     top: 0;
@@ -8,40 +8,34 @@ header {
     display: flex;
     justify-content: space-between;
     font-family: poppins, sans-serif;
-    z-index: 1000;
-}
-
-/* CHANGED: moved outside header block */
-header a {
+    
+a{
     color: #EEEEEE;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 18px;
+    font-size: 18px
 }
-
-/* CHANGED: moved outside header block */
-.Search {
+.Search{
     padding: 5px;
     font-size: 16px;
     border: none;
     border-radius: 4px;
     margin-right: 20px;
 }
-
-body {
-    margin: 0;
-    background-color: #EEEEEE;
 }
-
-body h1 {
+body{
+    margin: 0;
+    background-color: #EEEEEE
+}
+body h1{
     font-family: Open Sans, sans-serif;
 }
-
-body p {
-    font-family: Arial, Helvetica, sans-serif;
+body p{
+    font-family: Arial, Helvetica, sans-serif
 }
 
-footer {
+
+footer{
     font-family: poppins, sans-serif;
     background-color: #303841;
     color: #EEEEEE;
@@ -52,54 +46,47 @@ footer {
     width: 100%;
 }
 
-/* Styles for the homepage directly */
-.movie-grid {
+/*Styles for the homepage directly*/
+.movie-grid{
     display: grid;
     background-color: #303841;
 }
-
-#top-movies {
+#top-movies{
     display: flex;
     overflow-x: auto;
     padding: 20px;
     margin-left: 20px;
 }
 
-/* CHANGED: wrapper anchors the dropdown to the search bar */
+/* CHANGED: wrapper makes the dropdown position relative to the search box */
 .search-wrapper {
     position: relative;
     width: 300px;
     margin: 20px;
 }
 
-#search {
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
-}
-
-/* CHANGED: results now hover above the page instead of pushing content down */
+/* CHANGED: results now float above content instead of pushing it down */
 #results {
     position: absolute;
-    top: calc(100% + 5px);
+    top: 100%;
     left: 0;
     width: 100%;
-    background: #ffffff;
+    background: #fff;
     border: 1px solid #ccc;
-    z-index: 9999;
+    margin-top: 5px;
+    z-index: 1000;
     max-height: 250px;
     overflow-y: auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* CHANGED: make sure each result looks like a dropdown item */
 .item {
     padding: 10px;
     cursor: pointer;
-    background: #ffffff;
+    background: #fff;
 }
 
 .item:hover {
     background: #f0f0f0;
 }
-
-
