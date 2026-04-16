@@ -6,7 +6,6 @@ header{
     position: sticky;
     display: flex;
     justify-content: space-between;
-    width: 100%;
     font-family: poppins, sans-serif;
     
 a{
