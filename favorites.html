@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filter</title>
+    <title>Your Favorite Movies</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <header>
-    <nav>
+         <nav>
     <div class="menu">
        <a href="index.html">Movie Research</a>
          <a href="filter.html">Filter</a>
@@ -19,23 +19,19 @@
 <div class="Search">
 <input type="text" placeholder="Search for movies..." id="movieInput">
 <button onclick="getMovie()">Search</button>
-</div>
 </header>
-
 <body>
-    <h1>Filter Movies</h1>
-    <p>Use the filters below to narrow down your movie search by Genre:</p>
-    <div class="filter-section">
-        <label for="genre">Genre:</label>
-        <select id="genre" name="genre">
-        </select>
-    </div>
-    <div id="Movie-holder">
-        <!-- Filtered movies will be displayed here -->
-    </div>
+        <section id="favorites-section">
+            <h1>Your Favorite Movies</h1>
+            <p>Below are the movies you have saved for later.</p>
+            
+            <div id="favorites-container" class="movie-grid">
+                <p id="empty-msg">You haven't added any favorites yet!</p>
+            </div>
+        </section>
+    <footer>
+        <p>&copy; 2026 Movie Research Site. Built with Vanilla JS and CSS.</p>
+    </footer>
+    <script src="index.js"></script>
 </body>
-<footer>
-    <p>&copy; 2026 Movie Research Website. All rights reserved.</p>
- </footer>
- <script src="filter.js"></script>
 </html>
