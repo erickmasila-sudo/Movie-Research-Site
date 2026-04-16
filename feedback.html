@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<header>
+         <nav>
+    <div class="menu">
+       <a href="index.html">Movie Research</a>
+         <a href="filter.html">Filter</a>
+         <a href="advanced-filter.html">Advanced Filter</a>
+         <a href="feedback.html">Feedback</a>
+         <a href="favorites.html">Favourite</a>  
+     </div>
+</nav>
+<div class="Search">
+<input type="text" placeholder="Search for movies..." id="movieInput">
+<button onclick="getMovie()">Search</button>
+</header>
+<body>
+    <main>
+            <section id="feedback-section" class="container">
+            <h1>We Value Your Feedback</h1>
+            <p>Tell us about your experience using the Movie Research Site.</p>
+            <form id="feedback-form">
+                <div class="form-group">
+                    <label for="feedback-category">Feedback Topic:</label>
+                    <select id="feedback-category" name="feedback-category">
+                        <option value="general">General Inquiry</option>
+                        <option value="bug">Report a Bug</option>
+                        <option value="feature">Feature Request</option>
+                        <option value="movie-data">Movie Data Accuracy</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="user-message">Message:</label>
+                    <textarea id="user-message" name="user-message" rows="5" required placeholder="How can we improve?"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Feedback</button>
+            </form>
+        </section>
+    </body>
+</main>
+  <footer>
+        <p>&copy; 2026 Movie Research Site. Built with Vanilla JS and CSS.</p>
+    </footer>
+    <script src="index.js"></script>
+</html>
