@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Favorite Movies</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="filter.css">
 </head>
+
+<body>
+
 <header>
          <nav>
     <div class="menu">
@@ -16,22 +20,25 @@
          <a href="favorites.html">Favourite</a>  
      </div>
 </nav>
-<div class="Search">
-<input type="text" placeholder="Search for movies..." id="movieInput">
-<button onclick="getMovie()">Search</button>
+
 </header>
-<body>
-        <section id="favorites-section">
-            <h1>Your Favorite Movies</h1>
+
+ <h1>Your Favorite Movies</h1>
             <p>Below are the movies you have saved for later.</p>
-            
-            <div id="favorites-container" class="movie-grid">
-                <p id="empty-msg">You haven't added any favorites yet!</p>
-            </div>
-        </section>
+
+<div class="search-wrapper">
+<input type="text" placeholder="Search for movies..." id="search"></div>
+
+<button onclick="loadFavoriteMovies()">Search</button>
+        
+ <div id="Movie-holder">
+</div>
+<div id="favorite-holder">
+     <p id="empty-msg">You haven't added any favorites yet!</p>
+</div>
     <footer>
         <p>&copy; 2026 Movie Research Website. All rights reserved</p>
     </footer>
-    <script src="index.js"></script>
+    <script src="favorite.js"></script>
 </body>
 </html>
