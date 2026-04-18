@@ -2,10 +2,9 @@
 .container {
     max-width: 700px;
     margin: 40px auto;
-    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 .form-group {
     margin-bottom: 15px;
@@ -16,19 +15,12 @@
     margin-bottom: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .form-group select,
 .form-group textarea {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
@@ -46,4 +38,10 @@
 }
 .submit-btn:hover {
     background-color: #222831;
+}
+
+@media (max-width: 768px){
+    .container{
+        box-shadow: none;
+    }
 }

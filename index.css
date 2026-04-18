@@ -23,7 +23,7 @@ header a {
 
 body {
     margin: 0;
-    background-color: #EEEEEE;
+    background-color: whitesmoke;
 }
 
 body h1 {
@@ -52,6 +52,7 @@ footer {
 .movie-grid {
     display: grid;
     background-color: #303841;
+
 }
 
 #top-movies {
@@ -77,10 +78,10 @@ footer {
     position: absolute;
     left: 0;
     width: 100%;
-    background: #ffffff;
-    border: 1px solid #ccc;
+    background: whitesmoke;
+    border: 1px solid whitesmoke;
     max-height: 250px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 #Home-button {
