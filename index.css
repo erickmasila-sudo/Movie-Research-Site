@@ -7,6 +7,11 @@ header {
     display: flex;
     justify-content: space-between;
     font-family: poppins, sans-serif;
+    z-index: 1000;
+nav{
+    display: flex;
+    
+}
 }
 
 header a {
@@ -92,6 +97,53 @@ footer {
 #Home-button:hover {
     background-color: #222831;
 }
+
+
+/*for drop down menu*/
+
+
+#menu-toggle{
+    display: none;
+}
+.menu-btn{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.menu{
+    display: flex;
+    
+}
+
+@media (max-width: 768px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        background-color: #303841;
+        width: 100%;
+        text-align: center;
+    }
+    .menu a{
+        padding: 10px;
+        border-top: 1px 
+    }
+    .menu-btn{
+        display: block;
+        
+    }
+    #menu-toggle:checked + .menu-btn + .menu {
+        display: flex;
+    }
+}
+    
+
 
 
 
