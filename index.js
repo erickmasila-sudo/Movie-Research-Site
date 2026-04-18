@@ -97,3 +97,8 @@ searchInput.addEventListener(
   "input",
   debounce((e) => searchMovies(e.target.value), 300)
 );
+
+function goToFilter() {
+    let value = document.getElementById("search").value;
+    window.location.href = `filter.html?search=${value}`;
+}

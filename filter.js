@@ -1,4 +1,13 @@
 const API_KEY = "412b216f";
+
+const params = new URLSearchParams(window.location.search);
+const searchValue = params.get("search");
+
+if (searchValue) {
+    document.getElementById("search").value = searchValue;
+    loadMoviesByGenre(); 
+}
+
 function loadMoviesByGenre() {
     const search = document.getElementById("search").value;
     const genre = document.getElementById("genre").value;

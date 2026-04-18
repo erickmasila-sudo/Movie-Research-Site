@@ -78,6 +78,21 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+#Home-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #303841;
+    color: #EEEEEE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#Home-button:hover {
+    background-color: #222831;
+}
+
 
 
 
