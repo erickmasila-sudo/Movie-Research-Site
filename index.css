@@ -52,15 +52,22 @@ footer {
 .movie-grid {
     display: grid;
     background-color: #303841;
-
+    color: #EEEEEE;
 }
-
 #top-movies {
     display: flex;
     overflow-x: auto;
     padding: 20px;
     margin-left: 20px;
 }
+.movie {
+  border: 1px solid none;
+  border-radius: 10px;
+  padding: 15px;
+  width: 180px;
+  text-align: center;
+}
+
 .search-container{
     display: flex;
     margin: 20px 0;

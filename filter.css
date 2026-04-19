@@ -39,6 +39,7 @@ button:hover {
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
+    margin-bottom: 50px;
 }
 
 .movie-card {
@@ -68,3 +69,4 @@ button:hover {
     margin: 5px 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+

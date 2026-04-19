@@ -30,7 +30,7 @@ function displayTopMovies(movies) {
     movieDiv.classList.add("movie");
 
     movieDiv.innerHTML = `
-      <h3>${movie.Title}</h3>
+      <p>${movie.Title}</p>
       <img src="${movie.Poster && movie.Poster !== "N/A" ? movie.Poster : ""}" alt="${movie.Title}" width="150">
       <p>Year: ${movie.Year}</p>
     `;
