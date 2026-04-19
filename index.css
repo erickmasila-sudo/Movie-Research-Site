@@ -61,11 +61,16 @@ footer {
     padding: 20px;
     margin-left: 20px;
 }
-
+.search-container{
+    display: flex;
+    margin: 20px 0;
+}
 .search-wrapper {
     position: relative;
-    width: 300px;
+    align-items: flex-start;
+    width: auto;
     margin: 20px;
+    gap: 10px;
 }
 
 #search {
@@ -85,7 +90,7 @@ footer {
 }
 
 #Home-button {
-    display: block;
+    display: relative;
     margin: 10px auto;
     padding: 10px 20px;
     background-color: #303841;
@@ -93,6 +98,7 @@ footer {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 #Home-button:hover {
@@ -141,6 +147,9 @@ footer {
     }
     #menu-toggle:checked + .menu-btn + .menu {
         display: flex;
+    }
+    #search{
+        width: 260px;
     }
 }
     

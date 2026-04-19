@@ -8,7 +8,7 @@ const resultsDiv = document.getElementById("results");
 async function loadTopMovies() {
   try {
     
-   const response = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=movie&y=2026&type=movie`);
+   const response = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=movie&y=2025&type=movie`);
     const data = await response.json();
 
     if (data.Response === "True" && data.Search) {
