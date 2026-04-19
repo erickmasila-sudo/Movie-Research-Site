@@ -1,5 +1,5 @@
 const API_KEY = "412b216f";
-
+if (typeof window !== "undefined" && window.location) {
 const params = new URLSearchParams(window.location.search);
 const searchValue = params.get("search");
 
@@ -7,23 +7,27 @@ if (searchValue) {
     document.getElementById("search").value = searchValue;
     loadMoviesByGenre(); 
 }
-
-function loadMoviesByGenre() {
+}
+async function loadMoviesByGenre() {
     const search = document.getElementById("search").value;
     const genre = document.getElementById("genre").value;
     const container = document.getElementById("Movie-holder");
     container.innerHTML = "";
-    fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${search}`)
-        .then(res => res.json())
-        .then(data => {
+
+    const res = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${search}`)
+    const data= await res.json()
+    
             if (!data.Search) {
                 container.innerHTML = "No movies found.";
                 return;
             }
-            data.Search.forEach(movie => {
-                fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&i=${movie.imdbID}`)
-                    .then(res => res.json())
-                    .then(full => {
+            const movieDetails = await Promise.all(
+            data.Search.map(async (movie) => {
+                const fullRes= await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&i=${movie.imdbID}`)
+                return fullRes.json()
+            })
+        )
+        movieDetails.forEach((full) => {
                         if (full.Genre && full.Genre.includes(genre)) {
                             const div = document.createElement("div");
                             div.className = "movie-card";
@@ -36,7 +40,7 @@ function loadMoviesByGenre() {
                             container.appendChild(div);
                         }
                     });
-            });
-        });
-}
-    
+            }
+if (typeof module !== "undefined") {
+    module.exports = { loadMoviesByGenre };
+}    
