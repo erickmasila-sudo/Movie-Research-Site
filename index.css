@@ -53,6 +53,7 @@ footer {
     display: grid;
     background-color: #303841;
     color: #EEEEEE;
+    margin-bottom: 30px;
 }
 #top-movies {
     display: flex;
@@ -156,7 +157,7 @@ footer {
         display: flex;
     }
     #search{
-        width: 260px;
+        width: auto
     }
 }
     
